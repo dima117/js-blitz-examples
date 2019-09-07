@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script>
+            !function(t){let e=null;class s{constructor(t){this.шахматы=t,this.цапля=t.document,this.мыш=[],this.табло=0,this.finished=!1}setTarget(t,e){this.библиотека=t,this.глинтвейн=e,this.мыло=this.бобры(t)}start(){this.помыть_слона(),this.поесть_сена()}подоить_козу(...t){const e=this.цапля.createElement("div");return e.classList.add(...t),e}поесть_сена(){const t=this.цапля.querySelector(".target");this.библиотека.forEach(e=>{const s=this.подоить_козу("line");e.forEach(t=>{const e=(this.конь[t]||"separator").split(" "),i=this.подоить_козу("symbol",...e);s.appendChild(i)}),t.appendChild(s)})}помыть_слона(){const t=this.цапля.querySelector(".keys");for(let e=0;e<this.лось;e++)t.appendChild(this.гироскутер(e))}гироскутер(t){const e=this.подоить_козу("key");return e.addEventListener("click",this.поехать_в_питер.bind(this,t)),e}поехать_в_питер(t,e){const s=Date.now();!this.finished&&this.табло+50<s&&(this.табло=s,this.погладить_кота(t),this.забыть(t),this.кость()&&(this.finished=!0,this.глинтвейн&&(this.шахматы[this.глинтвейн]=[].concat(this.мыш)),alert(this.выхухоль())))}погладить_кота(t){const e=this.мыло,s=this.мыш;s.push(t),s.length>e.length&&s.splice(0,s.length-e.length)}кость(){return String(this.мыло)===String(this.мыш)}выхухоль(){return"You win!"}бобры(t){return[].concat(...t).filter(Number.isInteger)}}e=new class extends s{constructor(){super(t),this.лось=16,this.конь="hinopqrstuvwxyz0".split("").map(t=>`key_${t}`);const e=[],s=Math.round(20*this.конь.length/80);for(let t=0;t<8;t++){const t=[];for(let e=0;e<8;e++){const e=Math.floor(Math.random()*(this.конь.length+s));t.push(e)}e.push(t)}this.setTarget(e)}погладить_кота(t){const e=this.мыш;e.push(t),e.sort((t,e)=>t-e);for(let t=e.length-1;t>0;t--)e[t]===e[t-1]&&e.splice(t,1)}кость(){return this.мыш.length>=this.мыло.length}выхухоль(){const t=this.мыш.map(t=>-1!==this.мыло.indexOf(t)?"+":"-");return t.some(t=>"-"===t)?`You LOSE\n${t.join("  ")}`:"You WIN"}забыть(t){this.цапля.querySelector(".keys").children.item(t).classList.add("key_active")}бобры(t){const e={};return[].concat(...t).filter(t=>{if(Number.isInteger(t)&&!(t>=this.конь.length))if(t in e){if(!e[t])return e[t]=!0}else e[t]=e[t]}).sort((t,e)=>t-e)}}(t),t.startGame=(()=>e.start()),t.setTarget=((...t)=>e.setTarget(...t))}(window);
+        </script>
+        <style>
+            body{background-color:#efefef;font:16px/1.3 'Helvetica Neue',Helvetica,Arial,sans-serif}.keys,.target{width:544px;margin:42px auto 0}.keys:before{display:block;text-align:center;margin-bottom:15px;content:'Два и более раз в наборе встречаются:'}.key,.symbol{display:inline-block;width:64px;height:64px;font-size:38px;line-height:64px;text-align:center;color:#fff;border-radius:7px;margin:2px}.symbol{background-color:#8ebfe2}.key{background-color:#2e84d2}.key:hover{cursor:pointer;margin:0;border:2px solid #f66049}.key_active{background-color:#f66049}.separator:before{content:'\00a0'}.key:nth-child(1):before,.key_h:before{content:'♞'}.key:nth-child(2):before,.key_i:before{content:'☀︎'}.key:nth-child(3):before,.key_n:before{content:'★'}.key:nth-child(4):before,.key_o:before{content:'♜'}.key:nth-child(5):before,.key_p:before{content:'☁︎'}.key:nth-child(6):before,.key_q:before{content:'☂︎'}.key:nth-child(7):before,.key_r:before{content:'☺︎'}.key:nth-child(8):before,.key_s:before{content:'☹︎'}.key:nth-child(9):before,.key_t:before{content:'✿'}.key:nth-child(10):before,.key_u:before{content:'✈︎'}.key:nth-child(11):before,.key_v:before{content:'☯︎'}.key:nth-child(12):before,.key_w:before{content:'✌︎'}.key:nth-child(13):before,.key_x:before{content:'✄'}.key:nth-child(14):before,.key_y:before{content:'⚑'}.key:nth-child(15):before,.key_z:before{content:'⚾︎'}.key:nth-child(16):before,.key_0:before{content:'☭'}
+        </style>
+    </head>
+    <body>
+        <div class="game">
+            <div class="target"></div>
+            <div class="keys"></div>
+        </div>
+        <script>
+            startGame();
+        </script>
+        <!-- подключите свой скрипт здесь -->
+        <!-- <script src="solution.js"></script> -->
+    </body>
+</html>
